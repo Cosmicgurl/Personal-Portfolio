@@ -1,0 +1,44 @@
+html {
+  background-color: #f9eae1;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+header {
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+}
+nav {
+  background-color: #7d4f50;
+  margin: 0;
+  width: 100%;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+section {
+  height: 100vh;
+
+  align-items: center;
+  text-align: center;
+  padding-top: 80px;
+}
