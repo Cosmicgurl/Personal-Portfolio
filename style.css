@@ -1,26 +1,68 @@
 html {
-  background-color: #f9eae1;
+  background-color: rgb(249, 234, 225);
   margin: 0;
   padding: 0;
+  width: 100%;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-padding-top: 90px;
+  scroll-padding-top: 80px;
+  overflow-x: hidden;
+}
+body {
+  margin: 0 auto;
 }
 header {
+  width: 100vw;
   height: 100vh;
   align-items: center;
-  text-align: center;
-  padding-top: 40px;
+  margin: 0 auto;
+  padding: 190px 40px 0 40px;
+}
+header#home {
+  background: rgb(125, 79, 80);
+  background: linear-gradient(
+    308deg,
+    rgba(125, 79, 80, 0.8786108193277311) 11%,
+    rgba(170, 153, 143, 1) 58%
+  );
 }
 nav {
   background-color: #7d4f50;
   margin: 0;
   width: 100%;
-  padding: 10px 0;
+  padding: 15px 0;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
+}
+header .logo {
+  width: 65px;
+  position: fixed;
+  left: 15px;
+}
+header .email {
+  width: 20px;
+  position: fixed;
+  right: -80px;
+}
+header .nav-link {
+  letter-spacing: 1.5px;
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+header .nav-link:hover {
+  text-decoration: underline;
+}
+header .contact-button {
+  position: fixed;
+  right: 38px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
 }
 ul {
   display: flex;
@@ -29,16 +71,77 @@ ul {
   padding: 0;
   margin: 0;
 }
+header .introContent {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+header .intro-left {
+  margin-top: 80px;
+}
+header .text-header {
+  text-align: left;
+}
+header h1 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+header .introParagraph {
+  margin-bottom: 40px;
+}
+header .intro-text {
+  font-size: 50px;
+  font-weight: 700;
+}
+header img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-right: 90px;
+}
 
-.nav-link {
+header .header-button {
+  background-color: #7d4f50;
+  padding: 10px 18px;
   color: white;
-  margin: 10px;
   text-decoration: none;
+  border-radius: 10px;
+  margin-top: 20px;
 }
 section {
+  max-width: 1000px;
+  margin: 0 auto;
   height: 100vh;
-
   align-items: center;
   text-align: center;
   padding-top: 80px;
+}
+footer {
+  width: 100%;
+}
+@media screen and (max-width: 780px) {
+  header .contact-button {
+    display: none;
+  }
+  header .nav-link {
+    font-size: 15px;
+  }
+  header .logo {
+    width: 45px;
+  }
+  header .intro-left {
+    margin-top: 30px;
+  }
+  header .intro-text {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  header img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 }
