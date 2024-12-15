@@ -2,6 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
@@ -17,36 +20,28 @@
       <nav class="navBar">
         <ul>
           <li>
-            <img
-              class="logo"
-              src="logo.png"
-              alt="logo"
-            />
+            <a href=" #home">  <img class="logo"  src="logo.png" alt="logo" /></a>
           </li>
           <li>
             <a
-              class="nav-link active"
-              href="#home"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              class="nav-link active"
+              class="nav-link"
               href="#about"
               >About</a
             >
           </li>
           <li>
             <a
-              class="nav-link active"
-              href="#projects"
-              >Projects</a
+              class="nav-link"
+              href="#skills"
+              >Skills</a
             >
           </li>
           <li>
+            <a class="nav-link" href="#projects" >Projects</a >
+          </li>
+          <li>
             <a
-              class="nav-link active"
+              class="nav-link"
               href="#contact"
               >Contact</a
             >
@@ -70,10 +65,12 @@
         <div class="intro-left">
           <h1 class="intro-hello">Hello</h1>
           <span class="intro-text">
-            I am <span class="introName">Natalie</span> <br />
-            Front-End Developer
+           <small>I am Natalie</small>  <br />
+        Front-End Developer
           </span>
-          <p class="introParagraph">I am a Front-End developer bla bli blupp</p>
+          <p class="intro-paragraph">
+            I am a Front-End developer bla bli blupp
+          </p>
           <a
             class="header-button"
             href="#projects"
@@ -83,8 +80,7 @@
         <img
           src="small.jpeg"
           alt="me"
-          className="PhotoMe"
-          width="120px"
+          class="photoOfMe"
         />
       </div>
     </header>
@@ -99,92 +95,104 @@
         </p>
       </section>
       <section>
-        <h1 id="projects">Projekte</h1>
+        <h1 id="skills">Skills</h1>
+       <div class="container-skill">
+         <div class="skill">HTML</div>
+         <div class="skill">CSS</div>
+         <div class="skill">Respontive Webdesign</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Git</div>
+        <div class="skill">Bootstrap</div>
+        <div class="skill">React.js</div>
+        <div class="skill">AI</div>
+       
+       </div>
+      </section>
+      <section>
+        <h1 id="projects">Projects</h1>
         <p>
-          Eine Fernbeziehung zu führen erfordert mehr Anstrengung als eine
-          Beziehung, in der man sich regelmäßig sieht, aber wenn beide Partner
-          bereit sind, sich einzusetzen, kann die Beziehung wachsen und sogar
-          intensiver werden.
-        </p>
+        My goal with each project is to deliver a smooth, user-friendly experience that functions flawlessly across desktops,
+        tablets, and smartphones. Through this approach, I aim to bring the full beauty and functionality of the web to every
+         user, regardless of the device they’re using.  </p>
         <div class="project-container">
-          <div class="row">
-            <a
-              target="_blank"
-              href="https://travel-medellin-landingpage.netlify.app/"
-            >
-              <img
-                class="project-img"
-                src="medellin.png"
-                alt="medellin"
-            /></a>
+          <div class="project-row">
+            <a target="_blank" href="https://travel-medellin-landingpage.netlify.app/">
+              <img  class="project-img"  src="medellin.png" alt="medellin"/></a>
             <div>
-              <a
-                target="_blank"
-                href="https://travel-medellin-landingpage.netlify.app/"
-                class="website-link"
-                >get to the website</a
-              >
+              <div class="project-information">
+              <h3>Medellín travel page</h3>
+              <div> <strong>Goal:</strong>  To craft a responsive travel page that captures and showcases the vibrant beauty and unique charm of Medellín. </br><span class="technologies"><strong>Technologies: </strong>HTML, CSS, Responsive Webdesign, Git</span>
+              </div>
+              </div>
+              <a target="_blank" href="https://travel-medellin-landingpage.netlify.app/" class="website-link">get to the website</a>
             </div>
           </div>
-          <div class="row">
-            <a
-              target="_blank"
-              href="https://pretty-react-weather-app.netlify.app/"
-            >
-              <img
-                class="project-img"
-                src="weather.png"
-                alt="medellin"
-            /></a>
+          <div class="project-row">
+            <a target="_blank"  href="https://pretty-react-weather-app.netlify.app/">
+              <img  class="project-img"  src="weather.png"  alt="medellin"/></a>
             <div>
-              <a
-                target="_blank"
-                href="https://pretty-react-weather-app.netlify.app/"
-                class="website-link"
-                >get to the website</a
-              >
+              <div class="project-information">
+                <h3>Pretty Weather App</h3>
+              <div><strong>Goal:</strong> I created a visually appealing weather app using an API to provide users with real-time, accessible weather information
+                in an intuitive and engaging interface. </br> <span class="technologies"><strong>Technologies: </strong>HTML, CSS, Responsive Webdesign, Git, API</span>
+              </div>
+              </div>
+              </div>
+              <a target="_blank" href="https://pretty-react-weather-app.netlify.app/" class="website-link" >get to the website</a>
             </div>
-          </div>
-          <div class="row">
-            <a
-              target="_blank"
-              href="https://natalie-front-end.netlify.app/"
-            >
-              <img
-                class="project-img"
-                src="Photography.png"
-                alt="medellin"
-            /></a>
+         
+          <div class="project-row">
+            <a target="_blank" href="https://natalie-front-end.netlify.app/">
+              <img class="project-img" src="Photography.png" alt="medellin" /></a>
             <div>
-              <a
-                target="_blank"
-                href="https://natalie-front-end.netlify.app/"
-                class="website-link"
-                >get to the website</a
-              >
+              <div class="project-information">
+                <h3>Pretty Weather App</h3>
+              <div><strong>Goal:</strong> I created a visually appealing weather app using an API to provide users with real-time,
+                accessible weather information
+                in an intuitive and engaging interface. </br> <span class="technologies"><strong>Technologies: </strong>HTML, CSS,
+                  Responsive Webdesign, Git, API</span>
+                  </div>
+              </div>
+              <a target="_blank" href="https://natalie-front-end.netlify.app/" class="website-link" >get to the website
+              </a>
             </div>
           </div>
         </div>
       </section>
       <section class="section-contact">
         <h1 id="contact">Contact</h1>
+        <br>
         <p>
-          Eine Fernbeziehung zu führen erfordert mehr Anstrengung als eine
-          Beziehung, in der man sich regelmäßig sieht, aber wenn beide Partner
-          bereit sind, sich einzusetzen, kann die Beziehung wachsen und sogar
-          intensiver werden.
+        I’m always open to new opportunities, collaborations, or just a friendly chat! If you’d like to discuss a project, ask
+        questions, or connect, don’t hesitate to get in touch. You can reach me via the contact form below or through my social
+        media links.</br>
+        Looking forward to connecting!
         </p>
+        <a href="mailto:natalievoigt2@gmail.com" class="contact-email">natalievoigt2@gmail.com</a>
+        <div class="contact-links">
+       
+          <a href="" target="_blank">
+          <img
+            class="contact-icon"
+            src="linkedin.png"
+            alt="linkedin-icon"
+          /></a>
+        <a href="" target="_blank"> <img
+            class="contact-icon"
+            src="github.png"
+            alt="Github-icon"
+          /></a>
+        </div>
+       
       </section>
     </main>
     <footer>
       <div>
-        This page was coded by Natalie and is opensourced on
-        <a
-          href="https://github.com/Cosmicgurl"
-          target="_blank"
-        >
-          Github</a
-        >
+        This page was coded by
+        <a href="https://github.com/Cosmicgurl" target="_blank" >Natalie</a> and is opensourced on <a
+          href="https://github.com/Cosmicgurl/Personal-Portfolio"
+          target="_blank">Github.
+        </a>
       </div>
     </footer>
   </body>
