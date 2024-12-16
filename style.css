@@ -1,40 +1,45 @@
 html {
   background-color: rgb(249, 234, 225);
-  margin: 0;
- 
-  padding: 0;
   width: 100%;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-padding-top: 80px;
-  overflow-x:hidden;
+  scroll-padding-top: 60px;
 }
+html, body  {
+  color: rgba(0, 0, 0, 0.8);
+      height: 100%;
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+     }
 body {
-
-  margin: 0 auto;
-  padding: 0;
   font-family: "Funnel Display",
     sans-serif;
 }
+p {
+  color: black;
+  opacity: 0.9;
+}
 header#home {
-  overflow: hidden;
+
     width: 100vw;
-    min-height: 100vh;
+    min-height:max-content;
     align-items: center;
-    margin: 0 auto;
-    padding: 190px 40px 0 40px;
-  background: rgb(125, 79, 80);
-  background: linear-gradient(
+    padding: 190px 40px 148px 40px;
+    background: rgb(125, 79, 80);
+    background: linear-gradient(
     308deg,
     rgba(125, 79, 80, 0.8786108193277311) 11%,
     rgba(170, 153, 143, 1) 58%
   );
 }
 nav {
-  background-color: #7d4f50;
+
+ 
+ background-color: #7d4f50;
   margin: 0;
   width: 100%;
-  padding: 15px 0;
+  padding: 15px 10px;
   position: fixed;
   top: 0;
   left: 0;
@@ -43,12 +48,13 @@ nav {
 header .logo {
   width: 65px;
   position: fixed;
-  left: 15px;
+  left: 12px;
 }
 header .email {
   width: 20px;
   position: fixed;
   right: -80px;
+
 }
 header .nav-link {
   letter-spacing: 1.5px;
@@ -79,10 +85,10 @@ header .introContent {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content:space-evenly;
 }
 header .intro-left {
-  margin-top: 80px;
+  margin-top: 70px;
 }
 header .text-header {
   text-align: left;
@@ -90,13 +96,20 @@ header .text-header {
 header .intro-hello {
   font-size: 30px;
   margin-bottom: 5px;
+  font-weight: 900;
+  color: hwb(0 24% 76%);
+  margin-bottom: 0;
+  letter-spacing: 1.5px;
+
 }
 header .intro-text {
   font-size: 70px;
-  font-weight: 800;
+  font-weight: 900;
+  margin-top: 0;
 }
 header .intro-paragraph {
   margin-bottom: 40px;
+  max-width: 700px;
 }
 header img {
   max-width: 300px;
@@ -116,7 +129,6 @@ header .header-button {
   margin-top: 20px;
 }
 section {
-  max-width: 1200px;
   margin: 0 auto;
   align-items: center;
   text-align: center;
@@ -141,12 +153,18 @@ section .skill {
   width: 70px;
   height: 70px;
   margin: 10px;
-
 }
 section .project-container {
   display: flex;
   flex-direction: row;
- 
+
+}
+section p {
+padding: 0 30px;
+  max-width: 900px;
+  padding-bottom: 40px;
+  display: block;
+  margin: 0 auto;
 }
 section .project-row {
   background-color: rgba(170, 153, 143, 0.2);
@@ -160,6 +178,7 @@ section h1 {
   font-size: 40px;
   letter-spacing: 1.5px;
 }
+
 section .project-img {
   object-fit: cover;
   width: 295px;
@@ -175,19 +194,18 @@ section .website-link {
   border-radius: 10px;
 }
 section .project-information {
-padding: 5px 10px 20px 10px;
+padding: 5px 10px 25px 10px;
 width: 300px;
+
 }
 section.section-contact {
-  padding: 40px 30px 80px 30px;
+  padding: 80px 30px 65px 30px;
   max-width: 900px;
 }
-section #contact {
+section .contact-heading {
   margin:0;
 }
-section p{
-  padding-bottom: 30px;
-}
+
 section .contact-email {
   text-decoration: none;
   color: white;
@@ -222,9 +240,10 @@ footer a {
 
 
 @media screen and (max-width: 780px) {
-  header {
-    padding: 80px 20px 20px 20px;
-    max-height: 600px;
+header#home {
+    padding: 50px 0 0 0;
+   
+    margin: 0 auto;
   }
   header .contact-button {
     display: none;
@@ -233,6 +252,7 @@ footer a {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  height: 640px;
   }
   header .nav-link {
     font-size: 15px;
@@ -249,10 +269,22 @@ footer a {
   header .intro-left {
     margin-top: 30px;
   }
-  header .intro-text {
-    font-size: 30px;
-    font-weight: 700;
+  header .intro-hello {
+    font-size: 20px;
   }
+  header span.intro-text {
+    font-size: 30px;
+    font-weight: 900;
+  }
+    header .header-button {
+      background-color: #7d4f50;
+      padding: 8px 15px;
+      color: white;
+      font-size: smaller;
+      text-decoration: none;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
   header img.photoOfMe {
     max-width: 200px;
     border-radius: 50px;
@@ -264,6 +296,12 @@ footer a {
   section {
     padding-top: 17px;
   }
+  section h1 {
+    font-size: 23px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+  }
+  
   section .project-container {
     flex-direction: column;
     margin: 0 auto;
@@ -273,8 +311,59 @@ footer a {
     width: 190px;
     
   }
+    section.section-contact {
+      padding-top: 17px;
+      padding-bottom: 25px;
+    }
   footer {
     text-align: center;
     font-size: smaller;
   }
+}
+
+
+@media screen and (max-width:835px){
+    header .contact-button {
+        display: none;
+      }
+ #home {
+    max-height: 600px;
+  }
+     header .intro-text {
+       font-size: 45px;
+       font-weight: 800;
+     }
+  header .intro-paragraph {
+    padding: 0 30px;
+  }
+     header img.photoOfMe {
+       max-width: 230px;
+       border-radius: 50px;
+       width: 100%;
+       height: auto;
+       object-fit: cover;
+       margin: 20px auto;
+     }
+        section .project-container {
+          flex-direction: column;
+          margin: 0 auto;
+          align-items: center;
+        }
+         section .container-skill {
+           flex-wrap: wrap;
+         }
+     section .skill {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: #7d4f50;
+       color: white;
+       font-weight: 600;
+       font-size: 10px;
+       padding: 20px;
+       border-radius: 50%;
+       width: 30px;
+       height: 30px;
+       margin: 10px;
+     }
 }
