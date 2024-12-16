@@ -1,27 +1,28 @@
 html {
   background-color: rgb(249, 234, 225);
   margin: 0;
+ 
   padding: 0;
   width: 100%;
   box-sizing: border-box;
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
-  overflow-x: hidden;
+  overflow-x:hidden;
 }
 body {
+
   margin: 0 auto;
+  padding: 0;
   font-family: "Funnel Display",
     sans-serif;
 }
-header {
-  overflow: hidden;
-  width: 100vw;
-  min-height: 100vh;
-  align-items: center;
-  margin: 0 auto;
-  padding: 190px 40px 0 40px;
-}
 header#home {
+  overflow: hidden;
+    width: 100vw;
+    min-height: 100vh;
+    align-items: center;
+    margin: 0 auto;
+    padding: 190px 40px 0 40px;
   background: rgb(125, 79, 80);
   background: linear-gradient(
     308deg,
